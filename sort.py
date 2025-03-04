@@ -1,4 +1,6 @@
 import sys
+
+
 def sort(width, height, length, mass):
     if (width > 0 and height > 0 and length > 0 and mass > 0) is False:
         raise ValueError("Dimensions and mass must be greater then 0")
@@ -20,11 +22,8 @@ def sort(width, height, length, mass):
     
     return "STANDARD"
 
+
 if __name__ == "__main__":
-    width = None 
-    height = None
-    length = None
-    mass = None
     if len(sys.argv) == 5:
         try:
             width = int(sys.argv[1])
